@@ -13,6 +13,7 @@ function narray() {
     document.getElementById("valores").value = "";
 
     var maximo = Math.max.apply(null, numeros); //numero mas grande de un arreglo
+    var posicion = numeros.indexOf(maximo);
     var resultado = document.getElementById("resultado");
-    resultado.innerHTML = "El numero mas grande es: " + maximo;
+    resultado.innerHTML = "El numero mas grande es: " + maximo + "<br>Y su posicion es: " + posicion;
 }
